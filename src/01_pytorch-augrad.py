@@ -4,6 +4,9 @@ import matplotlib.pyplot as plt
 import torch.nn as nn
 from torch import optim
 from torch.utils.data import TensorDataset, DataLoader
+import os
+
+os.makedirs("./plots", exist_ok=True)
 
 # Create a 1D tensor
 x = torch.tensor([1.0, 2.0, 3.0])
@@ -319,4 +322,5 @@ ax.plot(
 ax.set_xlabel("x")
 ax.set_ylabel("y")
 ax.legend()
-plt.show()
+plt.savefig("./plots/output.png", dpi=300, bbox_inches="tight")
+plt.close()

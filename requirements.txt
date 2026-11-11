@@ -1,18 +1,22 @@
+# PyTorch CUDA 13.0
 --extra-index-url https://download.pytorch.org/whl/cu130
 
-# Core Frameworks (CUDA 13.0 Native Support)
 torch
 torchvision
 torchaudio
-numpy
-matplotlib
-scipy
 
+# Scientific computing
+numpy
+scipy
+matplotlib
+
+# JAX CUDA 13
 jax[cuda13]
 
-# JAX Ecosystem
+# JAX ecosystem
 flax
 optax
+numpyro
 
-# Bayesian Analysis
+# Bayesian analysis
 arviz

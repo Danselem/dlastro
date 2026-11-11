@@ -80,7 +80,8 @@ for ax in axes.flat:
     ax.axhline(0, color='k', linestyle='-', alpha=0.2)
 
 plt.tight_layout()
-plt.show()
+plt.savefig("./plots/transit.png", dpi=300, bbox_inches="tight")
+plt.close()
 
 # Make dataset and PyTorch dataloader with lower SNR
 dataset = TransitDataset(num_samples=5000, frac_transit=0.5, random_seed=42, noise_std=0.3, transit_depth=0.5)
@@ -261,4 +262,5 @@ plt.ylim(0.5, 1)
 plt.xlim(0, 20)
 plt.legend(loc="center right", fontsize=12, framealpha=0)
 plt.grid(alpha=0.15)
-plt.show()
+plt.savefig("./plots/trainacc.png", dpi=300, bbox_inches="tight")
+plt.close()

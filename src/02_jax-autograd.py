@@ -1,3 +1,4 @@
+import os
 import jax
 import jax.numpy as jnp
 import optax
@@ -5,6 +6,11 @@ import matplotlib.pyplot as plt
 import arviz as az
 import flax.nnx as nnx
 from functools import partial
+import numpyro
+import numpyro.distributions as dist
+from numpyro.infer import NUTS, MCMC
+
+os.makedirs("./plots", exist_ok=True)
 
 
 x = jnp.array([1.0, 2.0, 3.0])
@@ -413,9 +419,6 @@ param_names = ["a", "b", "c"]
 for name, val, err in zip(param_names, theta_final, se):
     print(f"{name} = {val:.6f} ± {err:.6f}")
 
-import numpyro
-import numpyro.distributions as dist
-from numpyro.infer import NUTS, MCMC
 
 # Define our probabilistic model
 def model(x, y=None, yerr=None):
@@ -471,12 +474,14 @@ var_names = ["a", "b", "c"]
 az.plot_pair(
     idata,
     var_names=var_names,
-    kind="kde",
-    marginals=True,
-    figsize=(10, 10),
+    marginal_kind="kde",
+    marginal=True,
+    backend="matplotlib",
+    figure_kwargs={"figsize": (10, 10)},
 )
 plt.suptitle("Posterior corner plot (NumPyro NUTS)", y=1.02)
-plt.show()
+plt.savefig("./plots/corner.png", dpi=300, bbox_inches="tight")
+plt.close()
 
 
 
@@ -543,4 +548,5 @@ ax.legend()
 ax.set_title("Flax NNX MLP fit (appendix)")
 ax.set_xlabel("x")
 ax.set_ylabel("y")
-plt.show()
+plt.savefig("./plots/flaxmlp.png", dpi=300, bbox_inches="tight")
+plt.close()
