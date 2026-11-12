@@ -1,0 +1,114 @@
+[
+  {
+    "path": "App.tsx",
+    "file": {
+      "file_name": "/mnt/data/src/App.tsx",
+      "storage_handle": "",
+      "storage_type": "BASE64"
+    }
+  },
+  {
+    "path": "assets/090ca27437f70d98-image_5e8e00",
+    "file": {
+      "file_name": "image_5e8e00",
+      "storage_handle": "",
+      "storage_type": "MANIFOLD",
+      "fbid": 4757610404458774,
+      "mime": "image/png",
+      "source_identifiers": [
+        {
+          "type": "typed_fbid",
+          "value": {
+            "fbid": 4757610404458774,
+            "fbtype": 71334
+          }
+        },
+        {
+          "type": "url",
+          "value": "safetynet_input_media://c085f77ba41c47a7a112b1f61037a6f0"
+        }
+      ],
+      "media_origin": "USER_UPLOAD"
+    }
+  },
+  {
+    "path": "assets/2fd1015852300ac3-image_e44dd2",
+    "file": {
+      "file_name": "image_e44dd2",
+      "storage_handle": "",
+      "storage_type": "MANIFOLD",
+      "fbid": 1135227336038616,
+      "mime": "image/png",
+      "source_identifiers": [
+        {
+          "type": "typed_fbid",
+          "value": {
+            "fbid": 1135227336038616,
+            "fbtype": 71334
+          }
+        },
+        {
+          "type": "url",
+          "value": "safetynet_input_media://f77778ed9cf149e79c20fc50d84f0559"
+        }
+      ],
+      "media_origin": "USER_UPLOAD"
+    }
+  },
+  {
+    "path": "assets/9f27102852ce3876-image_59b7d7",
+    "file": {
+      "file_name": "image_59b7d7",
+      "storage_handle": "",
+      "storage_type": "MANIFOLD",
+      "fbid": 2167371347986795,
+      "mime": "image/png",
+      "source_identifiers": [
+        {
+          "type": "typed_fbid",
+          "value": {
+            "fbid": 2167371347986795,
+            "fbtype": 71334
+          }
+        },
+        {
+          "type": "url",
+          "value": "safetynet_input_media://03ad0c1b1a45489ea86562daa3e9caea"
+        }
+      ],
+      "media_origin": "USER_UPLOAD"
+    }
+  },
+  {
+    "path": "assets/c179062508390e66-image_e6445e",
+    "file": {
+      "file_name": "image_e6445e",
+      "storage_handle": "",
+      "storage_type": "MANIFOLD",
+      "fbid": 1095846069943058,
+      "mime": "image/png",
+      "source_identifiers": [
+        {
+          "type": "typed_fbid",
+          "value": {
+            "fbid": 1095846069943058,
+            "fbtype": 71334
+          }
+        },
+        {
+          "type": "url",
+          "value": "safetynet_input_media://adc02a02bc8b43ae84154351c11c8fdd"
+        }
+      ],
+      "media_origin": "USER_UPLOAD"
+    }
+  },
+  {
+    "path": "index.css",
+    "file": {
+      "file_name": "/mnt/data/src/index.css",
+      "storage_handle": "",
+      "storage_type": "BASE64"
+    }
+  }
+]
